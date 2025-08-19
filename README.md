@@ -1,6 +1,6 @@
 # Transformer Models for Voltage Prediction
 
-This repository provides the dataset, trained Transformer-based models, and interpretability outputs for **voltage prediction of battery electrode materials**. It includes baseline metrics, per-ion analysis with weighted sampling, and SHAP-based feature attribution.
+This repository provides the trained Transformer-based models, and interpretability outputs for **voltage prediction of battery electrode materials**. It includes baseline metrics, per-ion analysis with weighted sampling, and SHAP-based feature attribution.
 
 ---
 
@@ -8,13 +8,11 @@ This repository provides the dataset, trained Transformer-based models, and inte
 ## Repository Structure
 
 ```text
-baseline_metrics_and_bootstrapping/
-├── battery_feature_extracted.csv  
+baseline_metrics_and_bootstrapping/  
 ├── entire_model_transformer_*.pth  
 ├── sd_transformer_*.ipynb        # Baseline & bootstrapping notebooks  
 
 per-ion-metrics/
-├── battery_feature_extracted.csv  
 ├── entire_model_transformer_*.pth  
 ├── *_weighted_sampling.ipynb     # Weighted-sample training for rare ions  
 ├── base.ipynb  
@@ -28,13 +26,11 @@ shap/
 ├── GRU_global.ipynb  
 ├── LSTM_local.ipynb  
 
-battery_feature_extracted.csv      # Dataset (Materials Project features)
 ```
 
 
 ## 📑 Contents
-
-- **Dataset**: Preprocessed Materials Project dataset (`battery_feature_extracted.csv`).  
+ 
 - **Trained Models**: Saved PyTorch `.pth` files for:  
   - Base Transformer  
   - Transformer + FFNN  
